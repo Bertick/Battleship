@@ -1,5 +1,7 @@
 #include "Functions.h"
-#include "Game.h"
+#include "Player.h"
+#include "Ship.h"
+#include "Grid.h"
 
 Player::Player(bool ai)
 {

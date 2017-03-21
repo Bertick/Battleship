@@ -1,7 +1,7 @@
-#include "Game.h"
 #include <ncurses.h>
 #include <string>
 #include <iostream>
+#include "Game.h"
 #include "Functions.h"
 
 using namespace std;

@@ -1,6 +1,7 @@
 #include "Game.h"
 
 #include "Functions.h"
+#include "Game.h"
 
 Game::Game()
 {

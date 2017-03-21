@@ -1,12 +1,12 @@
-#ifndef GAME_H
-#define GAME_H
+#ifndef GRID_H
+#define GRID_H
 
 #include <iostream>
 #include <string>
 #include <vector>
 #include <ncurses.h>
 #include <cstdlib>
-#include "Player.h"
+#include "Point.h"
 
 //removing namespace
 using std::string;
@@ -23,23 +23,24 @@ extern WINDOW* outwin;
 extern WINDOW* closing;
 extern WINDOW* turn;
 
-class Game{
+class Grid
+{
 
     public:
-    Player* player1;
-    Player* player2;
-    static bool newgame ;
-    static bool AIactive;
-    //int countT; FIXME do we need countT ?
 
-    Game();
-    ~Game();
-    void initNames();
-    void initGame();
-    void playGame();
-    void askName(char*);
-    void attack(Player*, Player*);
-    static void ActivateAI();
+    Grid(bool);
+    Grid();
+    ~Grid();
+    Point **points;
+    void operator =(Grid &);
+
+    void print();
+
+    private:
+
+    int cols;
+    int lines;
+    bool defense_grid;
 
 };
 

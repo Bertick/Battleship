@@ -1,5 +1,6 @@
 #include "Functions.h"
-#include "Game.h"
+#include "Ship.h"
+#include "Point.h"
 
 Ship::Ship(int dimention, string direction)
 {

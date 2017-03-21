@@ -1,11 +1,12 @@
 //HAL 9000 is watching you
 #include "Functions.h"
-#include "Game.h"
+#include "Grid.h"
+#include "Point.h"
 
 Grid::Grid(bool status):cols(23),lines(12)
 {
 
-    //sets the grid type (attack or defense)
+    //sets the grid type (attack or defence)
     defense_grid = status;
 
     //dynamic allocation of the grid
