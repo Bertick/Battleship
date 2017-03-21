@@ -2,7 +2,7 @@
 
 C++ project for the game battleship for bash terminal using ncurses library.
 
-programmers:
+Programmers:
 * Barghini Dario
 * Berto Federico
 * Forastiere Danilo
