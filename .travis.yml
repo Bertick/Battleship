@@ -3,3 +3,4 @@ sudo: false
 compiler:
     -g++
     -clang
+script: make
