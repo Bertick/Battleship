@@ -1,6 +1,4 @@
 language: cpp
 sudo: false
-compiler:
-    -g++
-    -clang
+compiler: g++
 script: make
